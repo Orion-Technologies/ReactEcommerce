@@ -5,8 +5,29 @@ header {
   color: antiquewhite;
 }
 
+.linkStyle {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.navlinkStyle {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+h1 {
+  color: aliceblue;
+}
+
 li {
   display: inline-block;
   margin: 1rem;
   cursor: pointer;
+  color: aliceblue;
+}
+
+.bigelow-rules-regular {
+  font-family: "Bigelow Rules", serif;
+  font-weight: 400;
+  font-style: normal;
 }

@@ -1,22 +1,30 @@
 import React from "react";
 import "./navbar.css";
-import "../CartWidget/CartWidget.jsx";
+import {Link, NavLink} from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget.jsx";
 
-function NavBar() {
-  return (
-    <header className="bg-primary">
-      <h1 className="display-1">Tienda X</h1>
-      <nav>
-        <ul>
-          <li>Lacteos</li> 
-          <li>Bebidas</li>
-          <li>Almacen</li>
-        </ul>
-      </nav>
-      <CartWidget />
-    </header>
-  );
+const NavBar = () => {
+    return (
+        <header className="bg-dark">
+            <Link className="linkStyle bigelow-rules-regular" to="/">
+                <h1 className="display-1">Games & Music</h1>
+            </Link>
+
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink className="navlinkStyle" to={"/categoria/1"}>Albumes</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="navlinkStyle" to={"/categoria/2"}>T-Shirts</NavLink>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <CartWidget/>
+        </header>
+    );
 }
 
 export default NavBar;
