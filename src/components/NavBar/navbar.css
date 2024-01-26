@@ -2,28 +2,28 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: antiquewhite;
+  color: #F2F1F1;
 }
 
 .linkStyle {
   text-decoration: none;
-  color: antiquewhite;
+  color: #F2F1F1;
 }
 
 .navlinkStyle {
   text-decoration: none;
-  color: antiquewhite;
+  color: #F2F1F1;
 }
 
 h1 {
-  color: aliceblue;
+  color: #F2F1F1;
 }
 
 li {
   display: inline-block;
   margin: 1rem;
   cursor: pointer;
-  color: aliceblue;
+  color: #F2F1F1;
 }
 
 .bigelow-rules-regular {

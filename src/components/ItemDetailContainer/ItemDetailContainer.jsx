@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
-import {getProducto} from "../../asyncmock.js";
+import {getUnProducto} from "../../asyncmock.js";
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
+import '../ItemListContainer/ItemListContainer.css'
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState(null);
     const {idItem} = useParams();
     useEffect(() => {
-        getProducto(idItem)
+        getUnProducto(idItem)
             .then(res => setProducto(res))
     }, [idItem]);
 
@@ -19,3 +20,4 @@ const ItemDetailContainer = () => {
 };
 
 export default ItemDetailContainer;
+
