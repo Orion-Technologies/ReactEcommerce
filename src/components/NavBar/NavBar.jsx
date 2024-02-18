@@ -13,10 +13,10 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink className="navlinkStyle" to={"/categoria/1"}>Albumes</NavLink>
+                        <NavLink className="navlinkStyle bigelow-rules-regular display-5" to={"/categoria/1"}>Albumes</NavLink>
                     </li>
                     <li>
-                        <NavLink className="navlinkStyle" to={"/categoria/2"}>T-Shirts</NavLink>
+                        <NavLink className="navlinkStyle bigelow-rules-regular display-5" to={"/categoria/2"}>T-Shirts</NavLink>
                     </li>
 
                 </ul>

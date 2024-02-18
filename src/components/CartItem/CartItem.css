@@ -1,0 +1,12 @@
+.contenedorItem {
+    text-align: center;
+    border: 1px solid black;
+    margin: 3rem;
+    padding: 3rem;
+    color: #F2F1F1;
+    background-color: rgb(33, 36, 41);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+

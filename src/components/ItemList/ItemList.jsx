@@ -1,10 +1,11 @@
 import Item from "../Item/Item.jsx";
 import './ItemList.css';
-import {useEffect, useState} from "react";
+//import {useEffect, useState} from "react";
 
 const ItemList = ({productos}) => {
-    const [animateClass, setAnimateClass] = useState("animate__animated animate__fadeIn");
 
+    /*
+    const [animateClass, setAnimateClass] = useState("animate__animated animate__fadeIn");
     useEffect(() => {
         if (productos.length > 0) {
             setAnimateClass("animate__animated animate__fadeOut");
@@ -15,9 +16,16 @@ const ItemList = ({productos}) => {
         }
     }, [productos]);
 
+
     return (
         <div className={`contenedorProductos ${animateClass}`}>
             {productos?.map(prod => <Item key={prod.id} {...prod} />)}
+        </div>
+    )
+     */
+    return (
+        <div className="contenedorProductos">
+            {productos.map(prod => <Item key={prod.id} {...prod} />)}
         </div>
     )
 }

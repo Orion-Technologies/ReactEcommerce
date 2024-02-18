@@ -3,7 +3,7 @@ import '../ItemCount/ItemCount.css'
 
 const ItemCount = ({inicial, stock, funcionAgregar}) => {
     const [contador, setContador] = useState(1);
-
+    console.log("inicial: " + inicial, "Stock: " + stock);
     const addOne = () => {
         console.log("add")
         if(contador < stock) {
