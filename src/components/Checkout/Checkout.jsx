@@ -2,7 +2,6 @@ import {useState, useContext} from "react";
 import {CarritoContext} from "../../context/CarritoContext.jsx";
 import {db} from "../../services/config.js";
 import { collection, addDoc, updateDoc, getDoc, doc} from "firebase/firestore";
-//import Swal from 'sweetalert2';
 import './Checkout.css'
 
 const Checkout = () => {
@@ -59,7 +58,6 @@ const Checkout = () => {
                     .then(docRef => {
                         setOrdenId(docRef.id);
                         vaciarCarrito();
-                        //Acá pueden limpiar los input y usar el Sweet Alert 2 para mostrar el Order ID.
                     })
                     .catch(error => console.log("Error al crear la orden", error))
             })
